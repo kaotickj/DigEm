@@ -11,11 +11,11 @@ Options:
 * -h To show help message
 * -H <HOSTNAME> To specify the target hostname
 * -i <IP Address> To specify the target ip address.
-* -o <path/to/filename.ext> Specify the path and filename to save output to. If none, output will be save to digEm.txt in the current directory.
+* -o <path/to/filename.ext> Specify the path and filename to save output to. If none, output will be saved to digEm.txt in the current directory.
 * -x Hack the Gibson <Simulation>
 >--------------------------------------------
 ##### Usage:
-Three arguments are required: -H \<hostname\> -i \<ip adress\> -o \<path/to/output-filename.ext\>
+Two arguments are required: -H \<hostname\> -i \<ip adress\>.  If you want to specify a location/filename for output, use -o \<path/to/output-filename.ext\>. Output will be saved to digEm.txt in the current directory if you omit the -o option.  
 ```sh
 ./digEm.sh -H google.com -i 142.251.45.238 -o out.txt
 cat out.txt

@@ -3,5 +3,21 @@
 # DigEm 🕵🔎 ️
 ![Logo](https://kdgwebsolutions.com/assets/img/digEm.png)
 
- This tool helps to simplify the dig utilty.  
+This tool helps to simplify the dig utility. One quick command automates DNS enumeration. For remote enumeration.
+
+Syntax: digEm.sh [-h|-H|-i|-o]
+
+Options:
+-------------------------------------------
+>-h To show this message
+-H <HOSTNAME> To specify the target hostname
+-i <IP Address> To specify the target ip address.
+-o <path/to/filename.ext> Specify the path and filename to save output to. If none, output will be save to digEm.txt in the current directory.
+>
+##### Usage:
+Three argumetns are required: -H <hostname> -i <ip adress> -o <path/to/output-filename.ext>
+```sh
+./digEm.sh -H google.com -i 142.251.45.238 -o out.txt
+cat out.txt
+```
  

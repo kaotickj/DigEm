@@ -6,13 +6,14 @@
 Syntax: digEm.sh [-h|-H|-i|-o]
 
 Options:
-> -------------------------------------------
+>-------------------------------------------
 
-* -h To show this message
+* -h To show help message
 * -H <HOSTNAME> To specify the target hostname
 * -i <IP Address> To specify the target ip address.
 * -o <path/to/filename.ext> Specify the path and filename to save output to. If none, output will be save to digEm.txt in the current directory.
-> --------------------------------------------
+* -x Hack the Gibson <Simulation>
+>--------------------------------------------
 ##### Usage:
 Three argumetns are required: -H <hostname> -i <ip adress> -o <path/to/output-filename.ext>
 ```sh

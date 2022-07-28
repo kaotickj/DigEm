@@ -15,7 +15,7 @@ Options:
 * -x Hack the Gibson <Simulation>
 >--------------------------------------------
 ##### Usage:
-Two arguments are required: -H \<hostname\> -i \<ip adress\>.  If you want to specify a location/filename for output, use -o \<path/to/output-filename.ext\>. Output will be saved to digEm.txt in the current directory if you omit the -o option.  
+Two arguments are required: -H \<hostname\> -i \<ip adress\>.  If you want to specify a location/filename for output, use -o \<path/to/output-filename.ext\>. Output will be saved to digEm.txt in the current directory on your local machine if you omit the -o option.  
 ```sh
 ./digEm.sh -H google.com -i 142.251.45.238 -o out.txt
 cat out.txt

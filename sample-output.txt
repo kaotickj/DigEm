@@ -1,0 +1,232 @@
+###############################
+#         SPF Records         #
+###############################
+
+; <<>> DiG 9.18.4-2-Debian <<>> spf trick.htb @10.10.11.166
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 11002
+;; flags: qr aa rd; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: af859d6bcb685835c8724d0662e20764487b27f5e6167740 (good)
+;; QUESTION SECTION:
+;trick.htb.			IN	SPF
+
+;; AUTHORITY SECTION:
+trick.htb.		604800	IN	SOA	trick.htb. root.trick.htb. 5 604800 86400 2419200 604800
+
+;; Query time: 44 msec
+;; SERVER: 10.10.11.166#53(10.10.11.166) (UDP)
+;; WHEN: Wed Jul 27 23:49:56 EDT 2022
+;; MSG SIZE  rcvd: 107
+
+###############################
+#          TXT Records        #
+###############################
+
+; <<>> DiG 9.18.4-2-Debian <<>> txt trick.htb @10.10.11.166
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 48624
+;; flags: qr aa rd; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: 8139df88f075c63178585abc62e207641fe9c43a57d8465f (good)
+;; QUESTION SECTION:
+;trick.htb.			IN	TXT
+
+;; AUTHORITY SECTION:
+trick.htb.		604800	IN	SOA	trick.htb. root.trick.htb. 5 604800 86400 2419200 604800
+
+;; Query time: 48 msec
+;; SERVER: 10.10.11.166#53(10.10.11.166) (UDP)
+;; WHEN: Wed Jul 27 23:49:57 EDT 2022
+;; MSG SIZE  rcvd: 107
+
+###############################
+#       CNAME Records         #
+###############################
+
+; <<>> DiG 9.18.4-2-Debian <<>> cname trick.htb @10.10.11.166
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 47988
+;; flags: qr aa rd; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: 82a887dfc160ee0057921ef962e207643e1c266be2686cb0 (good)
+;; QUESTION SECTION:
+;trick.htb.			IN	CNAME
+
+;; AUTHORITY SECTION:
+trick.htb.		604800	IN	SOA	trick.htb. root.trick.htb. 5 604800 86400 2419200 604800
+
+;; Query time: 48 msec
+;; SERVER: 10.10.11.166#53(10.10.11.166) (UDP)
+;; WHEN: Wed Jul 27 23:49:57 EDT 2022
+;; MSG SIZE  rcvd: 107
+
+###############################
+#          NS Records         #
+###############################
+
+; <<>> DiG 9.18.4-2-Debian <<>> ns trick.htb @10.10.11.166
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 40251
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 3
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: bf3a597e17309b0cdf2e843262e20764ac76507a478a1f45 (good)
+;; QUESTION SECTION:
+;trick.htb.			IN	NS
+
+;; ANSWER SECTION:
+trick.htb.		604800	IN	NS	trick.htb.
+
+;; ADDITIONAL SECTION:
+trick.htb.		604800	IN	A	127.0.0.1
+trick.htb.		604800	IN	AAAA	::1
+
+;; Query time: 48 msec
+;; SERVER: 10.10.11.166#53(10.10.11.166) (UDP)
+;; WHEN: Wed Jul 27 23:49:57 EDT 2022
+;; MSG SIZE  rcvd: 124
+
+###############################
+#          A  Records         #
+###############################
+
+; <<>> DiG 9.18.4-2-Debian <<>> a trick.htb @10.10.11.166
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 48343
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 2
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: bdd418c40b29a965e4b1c4e362e20764c989041f5495488b (good)
+;; QUESTION SECTION:
+;trick.htb.			IN	A
+
+;; ANSWER SECTION:
+trick.htb.		604800	IN	A	127.0.0.1
+
+;; AUTHORITY SECTION:
+trick.htb.		604800	IN	NS	trick.htb.
+
+;; ADDITIONAL SECTION:
+trick.htb.		604800	IN	AAAA	::1
+
+;; Query time: 48 msec
+;; SERVER: 10.10.11.166#53(10.10.11.166) (UDP)
+;; WHEN: Wed Jul 27 23:49:57 EDT 2022
+;; MSG SIZE  rcvd: 124
+
+###############################
+#          AXFR Scan          #
+###############################
+
+; <<>> DiG 9.18.4-2-Debian <<>> axfr trick.htb @10.10.11.166
+;; global options: +cmd
+trick.htb.		604800	IN	SOA	trick.htb. root.trick.htb. 5 604800 86400 2419200 604800
+trick.htb.		604800	IN	NS	trick.htb.
+trick.htb.		604800	IN	A	127.0.0.1
+trick.htb.		604800	IN	AAAA	::1
+preprod-payroll.trick.htb. 604800 IN	CNAME	trick.htb.
+trick.htb.		604800	IN	SOA	trick.htb. root.trick.htb. 5 604800 86400 2419200 604800
+;; Query time: 52 msec
+;; SERVER: 10.10.11.166#53(10.10.11.166) (TCP)
+;; WHEN: Wed Jul 27 23:49:57 EDT 2022
+;; XFR size: 6 records (messages 1, bytes 231)
+
+###############################
+#           ANY Scan          #
+###############################
+
+; <<>> DiG 9.18.4-2-Debian <<>> any trick.htb @10.10.11.166
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 34137
+;; flags: qr aa rd; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 3
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: 74597bd9329fca9b7b84fb2562e207655310e6ade98e574e (good)
+;; QUESTION SECTION:
+;trick.htb.			IN	ANY
+
+;; ANSWER SECTION:
+trick.htb.		604800	IN	SOA	trick.htb. root.trick.htb. 5 604800 86400 2419200 604800
+trick.htb.		604800	IN	NS	trick.htb.
+trick.htb.		604800	IN	A	127.0.0.1
+trick.htb.		604800	IN	AAAA	::1
+
+;; ADDITIONAL SECTION:
+trick.htb.		604800	IN	A	127.0.0.1
+trick.htb.		604800	IN	AAAA	::1
+
+;; Query time: 44 msec
+;; SERVER: 10.10.11.166#53(10.10.11.166) (TCP)
+;; WHEN: Wed Jul 27 23:49:57 EDT 2022
+;; MSG SIZE  rcvd: 209
+
+###############################
+#           ALL Scan          #
+###############################
+
+; <<>> DiG 9.18.4-2-Debian <<>> all trick.htb @10.10.11.166
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 49828
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;all.				IN	A
+
+;; AUTHORITY SECTION:
+.			86400	IN	SOA	a.root-servers.net. nstld.verisign-grs.com. 2022072702 1800 900 604800 86400
+
+;; Query time: 28 msec
+;; SERVER: 1.1.1.1#53(1.1.1.1) (UDP)
+;; WHEN: Wed Jul 27 23:49:57 EDT 2022
+;; MSG SIZE  rcvd: 107
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 35682
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 2
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: 24500a40de16a1ee82fe74cb62e2076575392c3d077521d4 (good)
+;; QUESTION SECTION:
+;trick.htb.			IN	A
+
+;; ANSWER SECTION:
+trick.htb.		604800	IN	A	127.0.0.1
+
+;; AUTHORITY SECTION:
+trick.htb.		604800	IN	NS	trick.htb.
+
+;; ADDITIONAL SECTION:
+trick.htb.		604800	IN	AAAA	::1
+
+;; Query time: 48 msec
+;; SERVER: 10.10.11.166#53(10.10.11.166) (UDP)
+;; WHEN: Wed Jul 27 23:49:57 EDT 2022
+;; MSG SIZE  rcvd: 124
+

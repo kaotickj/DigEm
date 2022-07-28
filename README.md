@@ -15,7 +15,7 @@ Options:
 * -x Hack the Gibson <Simulation>
 >--------------------------------------------
 ##### Usage:
-Three arguments are required: -H <hostname> -i <ip adress> -o <path/to/output-filename.ext>
+Three arguments are required: -H \<hostname\> -i \<ip adress\> -o \<path/to/output-filename.ext\>
 ```sh
 ./digEm.sh -H google.com -i 142.251.45.238 -o out.txt
 cat out.txt
